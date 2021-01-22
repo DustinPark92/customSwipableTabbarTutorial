@@ -13,6 +13,13 @@
 		DA1FE58A25BA9DD80084FABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1FE58825BA9DD80084FABD /* Main.storyboard */; };
 		DA1FE58C25BA9DDA0084FABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1FE58B25BA9DDA0084FABD /* Assets.xcassets */; };
 		DA1FE58F25BA9DDA0084FABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1FE58D25BA9DDA0084FABD /* LaunchScreen.storyboard */; };
+		DA1FE59825BA9DE60084FABD /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE59725BA9DE60084FABD /* TabsView.swift */; };
+		DA1FE59B25BA9E1F0084FABD /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE59A25BA9E1F0084FABD /* TabCell.swift */; };
+		DA1FE59E25BA9E400084FABD /* TabsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE59D25BA9E400084FABD /* TabsPageViewController.swift */; };
+		DA1FE5A225BA9F120084FABD /* BuyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE5A125BA9F120084FABD /* BuyVC.swift */; };
+		DA1FE5A525BA9F1E0084FABD /* SellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE5A425BA9F1E0084FABD /* SellVC.swift */; };
+		DA1FE5A825BA9F2F0084FABD /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE5A725BA9F2F0084FABD /* OrderVC.swift */; };
+		DA1FE5AB25BA9F3F0084FABD /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1FE5AA25BA9F3F0084FABD /* HistoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		DA1FE58B25BA9DDA0084FABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA1FE58E25BA9DDA0084FABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1FE59025BA9DDA0084FABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1FE59725BA9DE60084FABD /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		DA1FE59A25BA9E1F0084FABD /* TabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
+		DA1FE59D25BA9E400084FABD /* TabsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsPageViewController.swift; sourceTree = "<group>"; };
+		DA1FE5A125BA9F120084FABD /* BuyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVC.swift; sourceTree = "<group>"; };
+		DA1FE5A425BA9F1E0084FABD /* SellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellVC.swift; sourceTree = "<group>"; };
+		DA1FE5A725BA9F2F0084FABD /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		DA1FE5AA25BA9F3F0084FABD /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,30 @@
 		DA1FE58125BA9DD80084FABD /* customSwipableTabbarTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DA1FE5A025BA9EEE0084FABD /* viewControllers */,
 				DA1FE58225BA9DD80084FABD /* AppDelegate.swift */,
 				DA1FE58425BA9DD80084FABD /* SceneDelegate.swift */,
 				DA1FE58625BA9DD80084FABD /* ViewController.swift */,
+				DA1FE59725BA9DE60084FABD /* TabsView.swift */,
+				DA1FE59A25BA9E1F0084FABD /* TabCell.swift */,
+				DA1FE59D25BA9E400084FABD /* TabsPageViewController.swift */,
 				DA1FE58825BA9DD80084FABD /* Main.storyboard */,
 				DA1FE58B25BA9DDA0084FABD /* Assets.xcassets */,
 				DA1FE58D25BA9DDA0084FABD /* LaunchScreen.storyboard */,
 				DA1FE59025BA9DDA0084FABD /* Info.plist */,
 			);
 			path = customSwipableTabbarTutorial;
+			sourceTree = "<group>";
+		};
+		DA1FE5A025BA9EEE0084FABD /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA1FE5A125BA9F120084FABD /* BuyVC.swift */,
+				DA1FE5A425BA9F1E0084FABD /* SellVC.swift */,
+				DA1FE5A725BA9F2F0084FABD /* OrderVC.swift */,
+				DA1FE5AA25BA9F3F0084FABD /* HistoryVC.swift */,
+			);
+			path = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1FE5A525BA9F1E0084FABD /* SellVC.swift in Sources */,
+				DA1FE5AB25BA9F3F0084FABD /* HistoryVC.swift in Sources */,
+				DA1FE5A825BA9F2F0084FABD /* OrderVC.swift in Sources */,
 				DA1FE58725BA9DD80084FABD /* ViewController.swift in Sources */,
 				DA1FE58325BA9DD80084FABD /* AppDelegate.swift in Sources */,
+				DA1FE59B25BA9E1F0084FABD /* TabCell.swift in Sources */,
+				DA1FE59E25BA9E400084FABD /* TabsPageViewController.swift in Sources */,
+				DA1FE59825BA9DE60084FABD /* TabsView.swift in Sources */,
+				DA1FE5A225BA9F120084FABD /* BuyVC.swift in Sources */,
 				DA1FE58525BA9DD80084FABD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
